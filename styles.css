@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    /* Magical forest background: misty green gradients */
+    background: radial-gradient(circle at 60% 40%, #e3ffe7 0%, #a5d9af 60%, #658c5a 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+#gameContainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+canvas {
+    /* Soft magical clearing: light green gradient */
+    background: linear-gradient(to bottom, #d7f7c2 0%, #bffccf 60%, #5a734b 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 24px #3e7d48, 0 0 0 12px #eafbe1bb inset;
+    display: block;
+    outline: none;
+}
+#startBtn, #restartBtn {
+    padding: 14px 40px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2b5035;
+    /* Dewy magical button gradient */
+    background: linear-gradient(90deg, #bfffad 50%, #76e09a 100%);
+    border: none;
+    border-radius: 32px;
+    margin-top: 28px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #3e7d4888;
+    transition: background 0.2s, color 0.2s;
+}
+#startBtn:hover, #restartBtn:hover {
+    background: linear-gradient(90deg, #76e09a 0%, #bfffad 100%);
+    color: #165c44;
+}
+.menu-overlay, .gameover-overlay {
+    position: absolute;
+    left: 0; top: 0;
+    width: 100vw; height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Soft, semi-transparent magical overlay */
+    background: rgba(220, 255, 233, 0.92);
+    z-index: 10;
+    flex-direction: column;
+}
+.menu-title {
+    color: #50b87f;
+    font-size: 2.6rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 12px #bfffad;
+}
+.menu-desc {
+    color: #2b5035;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    text-align: center;
+}
+.score-label {
+    color: #34d39b;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-shadow: 0 1px 8px #bfffad;
+}
